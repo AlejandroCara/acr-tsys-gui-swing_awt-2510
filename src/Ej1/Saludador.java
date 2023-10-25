@@ -32,7 +32,7 @@ public class Saludador extends JFrame {
         setContentPane(contentPane);
 
         texto = new JLabel("Introduce un nombre al que saludar");
-        texto.setBounds(100, 35, 181, 26);
+        texto.setBounds(86, 37, 229, 26);
         contentPane.add(texto);
         
         inName = new JTextField();
