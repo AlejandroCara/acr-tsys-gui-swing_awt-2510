@@ -21,7 +21,6 @@ public class Encuesta extends JFrame {
 	private JPanel contentPane;
 	private JLabel selectOstxt;
 	private JLabel selectEspecialidadtxt;
-	private JTextField inFilm;
 	private JButton add_btn;
 	private ActionListener al;
 	private ButtonGroup osGroup;
