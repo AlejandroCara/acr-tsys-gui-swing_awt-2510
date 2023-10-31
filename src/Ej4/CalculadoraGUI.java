@@ -211,7 +211,11 @@ public class CalculadoraGUI extends JFrame {
 		String operator = getOperator(operation);
 		
 		if(!operator.equals("")) {
-			seccondOperator = Double.parseDouble(operation.substring(operation.indexOf(operator) + 1, operation.length()));
+			if(operation.substring(operation.indexOf(operator) + 1, operation.length()).equals("")) {
+				seccondOperator = 0;
+			} else {
+				seccondOperator = Double.parseDouble(operation.substring(operation.indexOf(operator) + 1, operation.length()));
+			}
 		}
 		
 		return seccondOperator;
