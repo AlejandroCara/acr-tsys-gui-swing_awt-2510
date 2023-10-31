@@ -113,7 +113,6 @@ public class CalculadoraGUI extends JFrame {
 					calculatorScreen.setText("");
 				}
 				calculatorScreen.setText(calculatorScreen.getText() + buttonText);
-				System.out.println("Numero");
 				
 			}
 		};
@@ -178,6 +177,7 @@ public class CalculadoraGUI extends JFrame {
 		return num1 / num2;
 	}
 	
+	//Extraer el operador aritmetico del string
 	public String getOperator(String operation) {
 		
 		String operator = "";
@@ -194,7 +194,8 @@ public class CalculadoraGUI extends JFrame {
 		
 		return operator;
 	}
-	
+
+	//Sacar el primer numero de la operación del string
 	public double getFirstOperator(String operation) {
 		double firstOperator = 0;
 		String operator = getOperator(operation);
@@ -205,7 +206,8 @@ public class CalculadoraGUI extends JFrame {
 		
 		return firstOperator;
 	}
-
+	
+	//Sacar el segundo numero de la operación del string
 	public double getSeccondOperator(String operation) {
 		double seccondOperator = 0;
 		String operator = getOperator(operation);
